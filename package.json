@@ -1,0 +1,64 @@
+{
+  "name": "greensbigopku",
+  "version": "0.1.0",
+  "description": "Greensbigopku (GBPK) - Professional ERC-20 Token on Canopy Testnet",
+  "author": "Greensbigopku Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterkehinde673/Greensbigopku.git"
+  },
+  "homepage": "https://github.com/peterkehinde673/Greensbigopku",
+  "keywords": [
+    "ethereum",
+    "erc20",
+    "token",
+    "smart-contract",
+    "solidity",
+    "web3",
+    "blockchain",
+    "canopy",
+    "testnet"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "test:coverage": "hardhat coverage",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network canopy-testnet",
+    "verify": "hardhat run scripts/verify.js --network canopy-testnet",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "format": "prettier --write 'contracts/**/*.sol' 'test/**/*.js' 'scripts/**/*.js'",
+    "balance": "hardhat run scripts/balance.js",
+    "transfer": "hardhat run scripts/transfer.js",
+    "approve": "hardhat run scripts/approve.js"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/contracts": "^4.9.3",
+    "@openzeppelin/hardhat-upgrades": "^1.28.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^2.8.8",
+    "prettier-plugin-solidity": "^1.1.3",
+    "solhint": "^3.4.1",
+    "solidity-coverage": "^0.8.2"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/peterkehinde673/Greensbigopku/issues"
+  }
+}
